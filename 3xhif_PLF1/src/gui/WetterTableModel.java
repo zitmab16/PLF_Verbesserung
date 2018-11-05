@@ -42,6 +42,14 @@ public class WetterTableModel extends AbstractTableModel {
         stations.add(w);
         fireTableRowsInserted(stations.size()-1, stations.size()-1);
     }
+    public void initColNames(){
+        colnames.add("Place");
+        colnames.add("Sea Level");
+        colnames.add("Temperature");
+        colnames.add("Humidity");
+        
+        fireTableStructureChanged();
+    }
     
     
 }

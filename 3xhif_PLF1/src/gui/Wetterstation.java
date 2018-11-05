@@ -31,6 +31,23 @@ public class Wetterstation {
         }
         this.humidity = humidity;
     }
+
+    public String getPlace() {
+        return place;
+    }
+
+    public int getSealvl() {
+        return sealvl;
+    }
+
+    public float getTemp() {
+        return temp;
+    }
+
+    public int getHumidity() {
+        return humidity;
+    }
+    
     
     
 }

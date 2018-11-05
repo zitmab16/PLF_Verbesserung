@@ -6,10 +6,14 @@ package gui;
  */
 public class WeatherGUI extends javax.swing.JFrame {
     WetterTableModel wbl = new WetterTableModel();
+    TableCellRenderer tcr = new TableCellRenderer();
     /** Creates new form WheaterGUI */
     public WeatherGUI() {
         initComponents();
         tabWheater.setModel(wbl);
+        tabWheater.setDefaultRenderer(Object.class, tcr);
+        wbl.initColNames();
+        
     }
 
     /** This method is called from within the constructor to

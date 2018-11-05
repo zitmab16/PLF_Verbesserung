@@ -119,11 +119,12 @@ public class WeatherDlg2 extends javax.swing.JDialog {
         
         try{
             w = new Wetterstation(place, sealvl, temp, hum);
+            ok = true;
+            this.dispose();
         }catch(Exception ex){
             JOptionPane.showMessageDialog(null,ex.getMessage());
         }
-        ok = true;
-        this.dispose();
+        
     }//GEN-LAST:event_btOkActionPerformed
 
     /**
